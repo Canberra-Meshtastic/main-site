@@ -10,7 +10,7 @@ export default function NavigationBar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-14 items-center justify-between w-full p-3">
         <Link href="/" className="flex justify-self-start items-center space-x-2">
-          <span className="h-6 w-6 rounded-full bg-primary" />
+          <img src="/favicon.ico" className="h-6 w-6 rounded-full" />
           <span className="hidden font-bold sm:inline-block">Canberra Meshtastic</span>
         </Link>
         <div className="self-center">

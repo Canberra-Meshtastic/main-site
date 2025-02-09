@@ -81,9 +81,9 @@ test("Nodes have images", ()=> {
 
     for(const node of CommunityNodes) {
         try{
-            expect(existsSync(`public/img/nodes/${node.id}.png`)).toBe(true)
+            expect(existsSync(`public/img/nodes/${node.id}.avif`)).toBe(true)
         } catch(e) {
-            throw new Error(`File "public/img/nodes/${node.id}.png" does not exist`)
+            throw new Error(`File "public/img/nodes/${node.id}.avif" does not exist, you can use gimp to convert your image to avif`)
         }
     }
 
