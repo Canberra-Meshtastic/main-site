@@ -45,4 +45,4 @@ If you are adding a new node you will need to add a .avif image to [/public/img/
 Once changes are run `npm run test` before commiting changes, it will check that naming conventions and required files are correct.
 
 > [!CAUTION]
-> When updating maintainers we may reach out to existing or new maintainers to confirm the change and contact details are correct
+> When updating maintainers we may reach out to existing or new maintainers to confirm the change and varify contact details.
