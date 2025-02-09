@@ -46,13 +46,3 @@ Once changes are run `npm run test` before commiting changes, it will check that
 
 > [!CAUTION]
 > When updating maintainers we may reach out to existing or new maintainers to confirm the change and contact details are correct
-
-# Testimonials 
-When adding a testimonial to a page you will need to link it to your github account page.
-
-If you want to remove a testimonial you have provide please make an [issue](https://github.com/ellahin/meshtastic-getting-started/issues) or remove the testimonial and make a pull request.
-
-> [!CAUTION]
-> We will only remove the testimonials on request of the testimonial holder.
-> If you make an issue or pull request against a testimonial that is not your own it will be denied.
-> Repeated attempts will be meet with repercussions.
