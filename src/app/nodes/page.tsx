@@ -13,7 +13,7 @@ export default function Nodes() {
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {CommunityNodes.map((node) => (
-            <Link href={`/nodes/${node.id} key={node.id}`}>
+            <Link href={`/nodes/${node.id}`} key={node.id}>
               <div className="flex flex-col items-start justify-between">
                 <div className="relative w-full">
                   <img
