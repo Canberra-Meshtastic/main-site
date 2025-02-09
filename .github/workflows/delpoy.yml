@@ -1,7 +1,7 @@
 name: CI
 on: push
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
     
@@ -18,5 +18,19 @@ jobs:
       run: npm i
     - name: Run tests
       run: npm run test
-    - name: Test build
+    - name: Build Site
       run: npm run build
+    - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
